@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="icon" href="./IMAGES/logo.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="con1">
+            
+            <div class="img">
+                <img src="./IMAGES/images.png" width="174px" height="65px">
+                <!-- <h1>Instagram</h1> -->
+            </div>
+
+            <div class="input">
+                <input type="text" placeholder="Phone number, username or email address" size="40">
+                <input type="password" placeholder="Password" size="40">
+
+            </div>
+
+
+            <div class="btnm">
+                <div class="btn">
+                    <a href="home.html"><p>Log in</p></a>
+                </div>
+            </div>
+            
+            <div class="orm1">
+                <div class="orm">
+                    <div class="hr1">
+                        <hr>
+                    </div>
+                    <div class="or">
+                        <p>OR</p>
+                    </div>
+                    <div class="hr2">
+                        <hr>
+                    </div>
+    
+                </div>
+            </div>
+            
+
+            <div class="other">
+                <i class="fa-brands fa-facebook"></i>
+                <a href=""><h5>Log in with Facebook</h5></a>
+            </div>
+
+            <div class="forgotten">
+                <p>Forgotten your password?</p>
+            </div>
+        </div>
+
+        <div class="con2">
+            <p>Don't have an account?<a href=""><span>Sign up</span></a></p>
+        </div>
+    </div>
+    
+</body>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.main{
+}
+
+.con1{
+    width: 350px;
+    height: 380px;
+    border: 1px solid rgb(219, 219, 219);
+    margin:auto;
+    margin-top: 3%;
+    text-align: center;
+    /* align-items: center; */
+    
+}
+
+.con1 .img{
+    margin-top: 10%;
+}
+
+.con1 .input{
+    display: block;
+    margin-top: 5%;
+    
+}
+ 
+.con1 .input input{
+    padding: 9px 0px 7px 8px;
+    margin-bottom: 10px;
+    /* border: none; */
+    border:1px solid rgb(219, 219, 219);
+    outline: none;
+}
+
+.con1 .input input:focus{
+    outline-color:rgb(219, 219, 219);
+    
+}
+
+.con1 .btn{
+    background-color: rgb(103, 181, 250);
+    color: white;
+    font-weight: bold;
+    width: 307px;
+    /* margin-left: 12%; */
+    padding: 9px 0px 7px 8px;
+    margin-top: 1px;
+    font-size: 14px;
+    border-radius: 10px;
+    /* display: flex; */
+
+}
+
+.con1 .btnm{
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+}
+.con1 .btn a{
+    text-decoration: none;
+    color: white;
+    /* justify-content: center; */
+}
+
+.con1 .orm1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: bisque; */
+}
+
+.con1 .orm {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 307px;
+   
+
+}
+
+.con1 .orm .hr1{
+    width: 130px;
+    /* height: 30px; */
+    margin-top: 8px;
+   
+
+}
+
+
+.con1 .orm .or{
+    width: 70px;
+    height: 30px;
+    font-size: 13px;
+    color: rgb(115, 115, 115);
+    font-weight: bold;
+    /* background-color: black; */
+}
+
+.con1 .orm .hr2{
+    width: 130px;
+    /* height: 30px; */
+    margin-top: 8px;
+    justify-content: flex-end;
+    /* background-color: aqua; */
+
+
+}
+
+.con1 .orm hr{
+    border: 1px solid rgb(219, 219, 219);
+
+}
+
+.con1 .other{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.con1 .other i{
+    margin-right: 10px;
+    font-size: 20px;
+    color: rgb(56, 81, 133);
+}
+
+.con1 .other a{
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(56, 81, 133);
+}
+
+.con1 .forgotten{
+    margin-top: 18px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.con2{
+    width: 350px;
+    height: 75px;
+    border: 1px solid rgb(219, 219, 219);
+    margin:15px auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.con2 p{
+    font-size: 14px;
+}
+
+.con2 span{
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.con2 a{
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(0, 149, 247);
+
+}
+</style>
+</html>

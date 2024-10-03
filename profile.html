@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="icon" href="./IMAGES/logo.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="main">
+        <div class="con1">
+            <div class="img">
+                <img src="./IMAGES/images.png">
+                <!-- <h1>Instagram</h1> -->
+            </div>
+
+            <div class="nav">
+                <ul>
+                    <div class="flex" style="margin-top: 25px;">
+                        <a href="home.html"><li><i class="fa-solid fa-house" id="icon"></i></li></a><span><a href="home.html">Home</a></span> 
+                    </div>
+
+                    <div class="flex">
+                        <a href="#"><li><i class="fa-solid fa-magnifying-glass"id="icon" ></i></li></a><span>Search</span> 
+                    </div>
+
+                    <div class="flex">
+                        <a href="#"><li class="list"><i class="fa-regular fa-compass " id="icon"></i></li></a><span>Explore</span> 
+                    </div>
+
+                    <div class="flex">
+                        <a href="#"><li class="list"><i class="fa-solid fa-clapperboard" id="icon"></i></i></li></a><span>Reels</span> 
+                    </div>
+
+                    <div class="flex">
+                        <a href="#"><li class="list"><i class="fa-brands fa-facebook-messenger " id="icon"></i></li></a><span>Messages</span> 
+                    </div>
+
+                    <div class="flex">
+                        <a href="#"><li class="list"><i class="fa-regular fa-heart " id="icon"></i></li></a><span>Notifications</span> 
+                    </div>
+
+                    <div class="flex">
+                        <a href="#"><li class="list"><i class="fa-regular fa-square-plus " id="icon"></i></li></a><span>Create</span> 
+                    </div>
+
+                    <div class="flex">
+                        <a href="#"><li><img src="./IMAGES/Profile/sakthi.jpg" style="width: 25px; height: 25px; border-radius: 50%;" id="icon"></li></a><span>Profile</span> 
+                    </div>
+                </ul>
+            </div>
+
+            <div class="nav" id="nav1">
+                <ul>
+                    <div class="flex">
+                        <a href="#"><li><i class="fa-brands fa-threads" id="icon" ></i></li></a><span>Threads</span>
+                    </div>
+
+                    <div class="flex">
+                        <a href="#"><li><i class="fa-solid fa-bars"  id="icon" ></i></li></a><span>More </span>  
+                    </div>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="con2">  
+
+            <div class="upper">
+                <div class="u1"> 
+                    <div class="u1l">
+                        <img src="./IMAGES/Profile/sakthi.jpg">
+                    </div>
+
+                    <div class="u1r"> 
+                        <div class="u1r1">
+                            <h5>__sakthi_03</h5>
+                            <p>Edit Profile</p>
+                            <p>View archieve</p>
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
+
+                        <div class="u1r2"> 
+                            <p><span class="num">10</span> posts</p>
+                            <p><span class="num">500</span> followers </p>
+                            <p><span class="num">20</span> following</p>
+                        </div>
+
+                        <div class="u1r3">
+                            <h5>SAKTHI &#128171</h5>
+                            <div class="icon">
+                                <i class="fa-brands fa-threads"></i><p>__sakthi_03</p>
+                            </div>
+                            <p class="gce">GCE'24 &#128081;</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="u2">
+                    <div class="box"><div class="image" style="width: 77px; height: 77px;"><img src="./IMAGES/Profile/priya.jpeg" alt="Highlight" > </div><p>Highlight&#128293;</p></div>
+                    <div class="box"><div class="image" style="width: 77px; height: 77px;"><img src="./IMAGES/Profile/profile2.jpeg" alt="Highlight" > </div><p>Highlight&#128293;</p></div>
+                    <div class="box"><div class="image" style="width: 77px; height: 77px;"><img src="./IMAGES/Profile/profile4.jpeg" alt="Highlight" > </div><p>Highlight&#128293;</p></div>
+                    <div class="box"><div class="image" style="width: 77px; height: 77px;"><img src="./IMAGES/Profile/profile8.jpeg" alt="Highlight" > </div><p>Highlight&#128293;</p></div>
+                    <div class="box"><div class="image" style="width: 77px; height: 77px;"><img src="./IMAGES/images1.png" alt="Highlight" > </div><p>New</p></div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="lower"></div>
+        </div>
+        
+    </div>
+</body>
+
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.main{
+    display: flex;
+}
+/* ************                   LEFT NAVBAR                      *********************** */
+
+
+.con1{
+    width: 16%;
+    height: 100vh;
+    border-right: 0.9px solid rgb(219, 219, 219);
+}
+
+.con1 .img img{
+    width: 110px;
+    height: 35px;
+    margin-top: 40px;
+    margin-left: 25px;
+}
+
+.con1 .img img:hover{
+    cursor: pointer;
+}
+
+
+.con1 .nav ul .flex{
+    display: flex;
+    align-items: center;
+    /* background-color: aqua; */
+    padding: 12px 10px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 10px;
+    list-style-type: none;
+    border-radius: 10px;
+}
+
+.con1 .nav ul .flex:hover{
+    cursor: pointer;
+    background-color: rgb(242, 242, 242);
+}
+
+.con1 .nav ul .flex span{
+    font-weight:90;
+    color: rgb(71, 71, 71);
+}
+.con1 .nav ul .flex span a{
+            font-weight:90;
+            text-decoration: none;
+            color: rgb(71, 71, 71);
+        }
+.con1 #nav1{
+    margin-top: 40px;
+}
+
+.con1 .nav ul a li #icon{
+    font-size: 24px;
+    margin-right: 15px;
+    color: rgb(0, 0, 0);
+}
+
+/* ***********                    PROFILE             ****************************** */
+
+.con2{
+    width: 800px;
+    height: 100vh;
+    /* background-color: red; */
+    /* border: 2px solid black; */
+    margin-left: 200px;
+}
+
+.con2 .upper .u1{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+
+.con2 .upper .u1 .u1l{
+    width:150px;
+    height:150px;
+    /* background-color: aqua; */
+
+}
+
+.con2 .upper .u1 .u1l img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit:cover ;
+
+}
+
+.con2 .upper .u1 .u1r .u1r1{
+    width: 470px;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    /* background-color: aqua */
+}
+
+.con2 .upper .u1 .u1r .u1r1 h5{
+    font-size: 20px;
+    margin-right: 25px;
+    font-weight: normal;
+}
+
+.con2 .upper .u1 .u1r .u1r1 p{
+    font-size: 14px;
+    background-color: rgb(242, 242, 242);
+    margin-right: 15px;
+    padding: 7px 17px;
+    color: rgb(0, 0, 0);
+    border-radius: 6px;
+}
+
+.con2 .upper .u1 .u1r .u1r1 i{
+    font-size: 24px;
+}
+
+.con2 .upper .u1 .u1r .u1r2{
+    width: 357px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-top: 30px;
+    /* background-color: aqua; */
+
+    
+}
+
+.con2 .upper .u1 .u1r .u1r2 p{
+    font-size: 16px;
+    /* color: red; */
+}
+
+.con2 .upper .u1 .u1r .u1r2 .num{
+    font-weight:600;
+}
+
+.con2 .upper .u1 .u1r .u1r3{
+    width: 357px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.con2 .upper .u1 .u1r .u1r3 h5{
+    font-size: 14px;
+}
+
+.con2 .upper .u1 .u1r .u1r3 .icon{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 10px;
+    padding: 3px 10px;
+}
+
+.con2 .upper .u1 .u1r .u1r3 .icon p{
+    font-size: 12px;
+}
+
+.con2 .upper .u1 .u1r .u1r3 .icon i{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.con2 .upper .u1 .u1r .u1r3 .gce{
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.con2 .upper .u2{
+    width: 656px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: bisque; */
+    margin-left: 25px;
+    margin-top: 45px;
+}
+
+.con2 .upper .u2 .box .image img{
+    height: 100%;
+    width: 100%;
+    /* background-color: black; */
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 2px;
+}
+
+.con2 .upper .u2 .box p{
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+hr{
+    margin-top: 65px;
+    color:rgb(219, 219, 219);
+    border: 1px solid rgb(219, 219, 219);
+    /* height: 1px; */
+}
+
+</style>
+</html>

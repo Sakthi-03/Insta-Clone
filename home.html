@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instgram</title>
+    <link rel="icon" href="./IMAGES/logo.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+            font-family: Helvetica, Arial, sans-serif;
+        
+        }
+        
+        /* *********** MAIN CONTAINER *********************** */
+        .main{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        
+        
+        /* ********** LOGO AND NAV BAR ************************** */
+        .con1{
+            width: 16%;
+            height: 100vh;
+            /* background-color: aqua; */
+            border-right: 0.9px solid rgb(219, 219, 219);
+            scrollbar-width: none;
+        }
+
+        /* *********************** LOGO ************************* */
+        .con1 .img img{
+            width: 110px;
+            height: 35px;
+            margin-top: 40px;
+            margin-left: 25px;
+        }
+
+        /* ********************** NAVBAR *************************** */
+        .con1 .nav ul .flex{
+            display: flex;
+            align-items: center;
+            /* background-color: aqua; */
+            padding: 12px 10px;
+            margin-left: 12px;
+            margin-right: 12px;
+            margin-bottom: 10px;
+            list-style-type: none;
+            border-radius: 10px;
+        }
+        
+        .con1 .nav ul .flex:hover{
+            cursor: pointer;
+            background-color: rgb(242, 242, 242);
+        }
+        
+        .con1 .nav ul .flex span{
+            font-weight:90;
+            color: rgb(71, 71, 71);
+        }
+        .con1 .nav ul .flex span a{
+            font-weight:90;
+            text-decoration: none;
+            color: rgb(71, 71, 71);
+        }
+        .con1 #nav1{
+            margin-top: 15px;
+        }
+        
+        .con1 .nav ul a li #icon{
+            font-size: 24px;
+            margin-right: 15px;
+            color: rgb(0, 0, 0);
+        }
+        
+        
+        
+        
+        /* ******************** POST AND STORY MAIN CONTAINER ******************* */
+        .con2{
+            width: 870px;
+            height: 100vh;
+            /* background-color: black; */
+            position: relative;
+            /* -ms-overflow-style: none;  */
+            scrollbar-width: none;
+        }
+        
+        
+        /* ********************* STORY ************************* */
+        .con21{
+            width: 75%; 
+            height: 110px;
+            /* background-color: brown; */
+            position: absolute;
+            left: 135px;
+            /* display: flex; */
+        }
+        
+        .story{
+            display: flex;
+        }
+        
+        .box{
+            width: 70px;
+            height: 70px;
+            
+            border-radius: 50%;
+            margin-top: 15px;
+            margin-right: 10px;
+            
+            overflow: hidden;
+            border: 3px solid rgb(211, 0, 197);
+            /* background-color: black; */
+            
+        
+        }
+        .boxp{
+            border: 3px solid rgb(27, 209, 79);
+        }
+        
+        .box1 .box img{
+            /* margin-top: 10px; */
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            padding: 2px;
+        }
+        
+        .box1 p{
+            font-size: 12px;
+            text-align: center;
+            /* background-color: #737373; */
+            text-overflow: ellipsis;
+            color: rgb(47, 47, 47);
+        }
+        
+        .box1{
+            width: 75px;
+            height: 110px;
+            /* background-color: #0095F6; */
+            margin-right: 10px;
+        }
+        
+        
+        
+        /* *********************** POST ************************ */
+        .surya{
+            width: 55%;
+            height: 100%;
+            position: absolute;
+            left: 210px;
+            top: 135px;
+            
+        }
+        
+        .priya1{
+            width: 55%;
+            height: 100%;
+            position: absolute;
+            left: 210px;
+            top: 880px;
+        }
+        
+        .priya2{
+            width: 55%;
+            height: 100%;
+            position: absolute;
+            left: 210px;
+            top: 1630px;
+        }
+        
+        .harish{
+            width: 55%;
+            height: 100%;
+            position: absolute;
+            left: 210px;
+            top: 2380px;
+        }
+        
+        .mega{
+            width: 55%;
+            height: 100%;
+            position: absolute;
+            left: 210px;
+            top: 3130px;
+        }
+        
+        .nayanthara{
+            width: 55%;
+            height: 100%;
+            position: absolute;
+            left: 210px;
+            top: 3880px;
+            
+        }
+        
+        .vijay{
+            width: 55%;
+            height: 100%;
+            position: absolute;
+            left: 210px;
+            top: 4630px;
+            
+        }
+
+        .deepika{
+            width: 55%;
+            height: 100%;
+            position: absolute;
+            left: 210px;
+            top: 5380px;
+            
+        }
+        
+        
+        
+        
+        .post .pnav{
+           display: flex;
+        }
+        .post .pnav .prof{
+            display: flex;
+        }
+        .post .pnav .prof img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            padding: 2px;
+            border: 3px solid rgb(211, 0, 197);
+        }
+        .post .pnav .prof h5{
+            margin-top: 10px;
+            margin-left: 10px;
+            color: rgb(25, 25, 25);
+        }
+        .post .pnav .prof p{
+            font-size: 15px;
+            margin-top: 10px;
+            margin-left: 8px;
+            color: rgb(139, 139, 139);
+        
+        }
+        .post .pnav .more {
+            font-size: 18px;
+            margin-top: 13px;
+            margin-left: 279px; 
+            /* background-color: aqua; */
+        }
+        
+        
+        .post .bnav{
+            display: flex;
+        }
+        .post .bnav .saved{
+            margin-left: 328px; 
+        }
+        .post .bnav .emoji,.saved{
+            font-size: 22px;
+            margin-top: 10px;
+        }
+        .post .bnav .emoji i{
+            margin-right: 15px;
+        }
+        
+        
+        
+        .post .bnav2 h5,p{
+            margin-top: 6px;
+        }
+        .post .bnav2 p{
+            font-size: 15px;
+            color: rgb(139, 139, 139);
+        }
+        
+        
+        
+        .post .pfooter{
+            display: flex;
+        }
+        .post .pfooter .cmt input{
+            border: none;
+            margin-top: 10px;
+            
+        }
+        .post .pfooter .cmt input:focus{
+            outline: none;
+        }
+        .post .pfooter i{
+            margin-left: 300px; 
+            margin-top: 8px;
+            font-size: 15px;
+        }
+        
+        hr{
+            margin-top: 25px;
+            /* color:rgb(219, 219, 219); */
+            border: 1px solid rgb(219, 219, 219);
+            /* height: 1px; */
+        }
+        
+        
+        .post .suryaposter{
+            width:100% ;
+            height: 500px;
+            border: 1px solid rgb(219, 219, 219);
+            border-radius: 5px;
+            margin-top: 8px;
+            background: url(./IMAGES/Post/surya.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .post .priyaposter{
+            width:100% ;
+            height: 500px;
+            border: 1px solid rgb(219, 219, 219);
+            border-radius: 5px;
+            margin-top: 8px;
+            background: url(./IMAGES/Post/priya.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .post .priyaposter1{
+            width:100% ;
+            height: 500px;
+            border: 1px solid rgb(219, 219, 219);
+            border-radius: 5px;
+            margin-top: 8px;
+            background: url(./IMAGES/Post/priya1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .post .harishposter{
+            width:100% ;
+            height: 500px;
+            border: 1px solid rgb(219, 219, 219);
+            border-radius: 5px;
+            margin-top: 8px;
+            background: url(./IMAGES/Post/harish.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .post .megaposter{
+            width:100% ;
+            height: 500px;
+            border: 1px solid rgb(219, 219, 219);
+            border-radius: 5px;
+            margin-top: 8px;
+            background: url(./IMAGES/Post/mega.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        
+        .post .nayanposter{
+            width:100% ;
+            height: 500px;
+            border: 1px solid rgb(219, 219, 219);
+            border-radius: 5px;
+            margin-top: 8px;
+            background: url(./IMAGES/Post/nayanthara.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .post .vijayposter{
+            width:100% ;
+            height: 500px;
+            border: 1px solid rgb(219, 219, 219);
+            border-radius: 5px;
+            margin-top: 8px;
+            background: url(./IMAGES/Post/vijay1.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .post .deepikaposter{
+            width:100% ;
+            height: 500px;
+            border: 1px solid rgb(219, 219, 219);
+            border-radius: 5px;
+            margin-top: 8px;
+            background: url(./IMAGES/Post/deepika\ post.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        
+        /* **************** SUGGESTIONS ********************* */
+        .con3{
+            width: 20%;
+            height: 800px;
+            /* background-color: beige; */
+            /* margin-left: 10px; */
+            /* margin-top: 100px; */
+            /* display: flex; */
+            /* scrollbar-width: none; */
+            overflow: hidden;
+        
+        }
+        
+        .con3 .navbar{
+            margin-top: 50px;
+        }
+        
+        .con3 .navbar .copy{
+            color: #CACACA;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+        
+        .con3 .navbar ul{
+            display: flex;
+        }
+         
+        .con3 .navbar .ul1{
+            margin-top: 10px;
+        }
+        
+        .con3 .navbar ul a {
+            text-decoration: none;
+            color: #CACACA;
+            font-size: 12px;
+            margin-right: 10px;
+        }
+        
+        .con3 .navbar ul a:hover{
+            border-bottom: 1px solid #CACACA ;
+        }
+        /* .con3 .navbar ul a li{
+            list-style-type: disc;
+        
+        } */
+        
+        .con3 .suggh{
+            margin-top: 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .con3 .suggh h5{
+            color: #737373;
+            font-size: 14px;
+            margin-top: 10px;
+            /* background-color: #0095F6; */
+        }
+        
+        .con3 .suggh p{
+            font-size: 12px;
+            font-weight:bold;
+            color: #858585;
+        }
+        
+        .con3h .profile .detail .blue{
+            display: flex;
+            align-items: center;
+        }
+        
+        .con3 .con3h .profile{
+            display: flex;
+            align-items: center;
+        }
+        
+        .con3 .con3h .profile img{
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        .con3 .con3h p{
+            font-size: 12px;
+            /* font-weight: bold; */
+            color:#0095F6;
+        }
+        .con3 .con3h .profile .detail p{
+            margin-top: 5px;
+            color: #7B7B7B;
+        }
+        
+        .con3 .con3h{
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .con3 .con3h .profile .detail a{
+            text-decoration: none;
+            color: black;
+        }
+        
+        .con3 .con3h .profile .detail h5:hover{
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        <div class="con1">
+            <div class="img">
+                <img src="./IMAGES/images.png">
+                <!-- <h1>Instagram</h1> -->
+            </div>
+
+
+            <div class="nav">
+                <ul>
+                    <div class="flex" style="margin-top: 25px;">
+                        <a href="home.html"><li><i class="fa-solid fa-house" id="icon"></i></li></a><span><a href="home.html">Home</a></span> 
+                    </div>
+
+                    <div class="flex">
+                        <a href="#"><li><i class="fa-solid fa-magnifying-glass"id="icon" ></i></li></a><span>Search</span> 
+                    </div>
+
+                    <div class="flex">
+                        <a href="#"><li class="list"><i class="fa-regular fa-compass " id="icon"></i></li></a><span>Explore</span> 
+                    </div>
+
+                    <div class="flex">
+                        <a href="#"><li class="list"><i class="fa-solid fa-clapperboard" id="icon"></i></i></li></a><span>Reels</span> 
+                    </div>
+
+                    <div class="flex">
+                        <a href="#"><li class="list"><i class="fa-brands fa-facebook-messenger " id="icon"></i></li></a><span>Messages</span> 
+                    </div>
+
+                    <div class="flex">
+                        <a href="#"><li class="list"><i class="fa-regular fa-heart " id="icon"></i></li></a><span>Notifications</span> 
+                    </div>
+
+                    <div class="flex">
+                        <a href="#"><li class="list"><i class="fa-regular fa-square-plus " id="icon"></i></li></a><span>Create</span> 
+                    </div>
+
+                    <div class="flex">
+                        <a href="./profile.html"><li><img src="./IMAGES/Profile/sakthi.jpg" style="width: 25px; height: 25px; border-radius: 50%;" id="icon"></li></a><a href="./profile.html" style="text-decoration: none;"><span>Profile</span> </a>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="nav" id="nav1">
+                <ul>
+                    <div class="flex">
+                        <a href="#"><li><i class="fa-brands fa-threads" id="icon" ></i></li></a><span>Threads</span>
+                    </div>
+
+                    <div class="flex">
+                        <a href="#"><li><i class="fa-solid fa-bars"  id="icon" ></i></li></a><span>More </span>  
+                    </div>
+                </ul>
+            </div>
+
+            
+        </div>
+        <div class="con2">
+            <div class="con21">
+                <div class="story">
+                    <div class="box1"><div class="box" ><img src="./IMAGES/Profile/profile4.jpeg" ></div><P>nayanthara</P></div>
+                    <div class="box1"><div class="box boxp"><img src="./IMAGES/Profile/priya.jpeg"></div><p>priyabhavanishankar</p></div>
+                    <div class="box1"><div class="box"><img src="./IMAGES/Profile/profile3.png"></div><p>aryaoffl</div>
+                    <div class="box1"><div class="box"><img src="./IMAGES/Profile/profile1.jpeg"></div><p>actorsuriya</div>
+                    <div class="box1"><div class="box"><img src="./IMAGES/Profile/profile3.jpeg"></div><p>actorvijay</div>
+                    <div class="box1"><div class="box"><img src="./IMAGES/Profile/profile6.jpeg"></div><p>tamannaahspeaks</div>
+                    <div class="box1"><div class="box"><img src="./IMAGES/Profile/profile8.jpeg"></div><p>megaakash</div>
+                    <div class="box1"><div class="box"><img src="./IMAGES/Profile/profile2.jpeg"></div><p>iamharishkalyan</div>
+                    
+                </div>
+            </div>
+
+            <!-- ***********************POST 1  ************************************************ -->
+            <div class="surya">
+                <div class="post">
+                    <div class="pnav">
+
+                        <div class="prof">
+                            <img src="./IMAGES/Profile/profile1.jpeg">
+                            <h5>surya</h5>
+                            <h4 style="margin-left: 5px; margin-top: 1px;font-size: 20px;">.</h5>
+                            <p> 18 h</p>
+                        </div>
+
+                        <div class="more">
+                            <i class="fa-solid fa-ellipsis" style="margin-left: 30px;" ></i>
+                        </div>
+                    </div>
+
+                    <div class="suryaposter">
+                    </div>
+
+                    <div class="bnav">
+                        <div class="emoji">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </div>
+
+                        <div class="saved">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="bnav2">
+                        <h5>855.4k likes</h5>
+                        <h5>surya &#128525</h5>
+                        <p>View all 901.5k comments</p>
+                    </div>
+
+                    <div class="pfooter">
+                        <div class="cmt">
+                            <input type="text" placeholder="Add a comment...">
+                        </div>
+                        <i class="fa-regular fa-face-smile"></i>
+                    </div>
+                    
+                </div>
+                <hr>
+            </div>
+
+            
+
+            <!-- *************POST   2  *************************************************** -->
+
+            <div class="priya1">
+                <div class="post">
+                    <div class="pnav">
+
+                        <div class="prof">
+                            <img src="./IMAGES/Profile/profile5.jpeg">
+                            <h5>priya</h5>
+                            <h4 style="margin-left: 5px; margin-top: 1px;font-size: 20px;">.</h5>
+                            <p> 10 h</p>
+                        </div>
+
+                        <div class="more">
+                            <i class="fa-solid fa-ellipsis"  style="margin-left: 40px;"></i>
+                        </div>
+                    </div>
+
+                    <div class="priyaposter">
+                    </div>
+
+                    <div class="bnav">
+                        <div class="emoji">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </div>
+
+                        <div class="saved">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="bnav2">
+                        <h5>555.4k likes</h5>
+                        <h5>priya &#128525</h5>
+                        <p>View all 102.5k comments</p>
+                    </div>
+
+                    <div class="pfooter">
+                        <div class="cmt">
+                            <input type="text" placeholder="Add a comment...">
+                        </div>
+                        <i class="fa-regular fa-face-smile"></i>
+                    </div>
+                    
+                </div>
+                <hr>
+            </div>
+
+            <!-- *********************** POST ====>>>>   3 ************************************* -->
+
+            <div class="priya2">
+                <div class="post">
+                    <div class="pnav">
+
+                        <div class="prof">
+                            <img src="./IMAGES/Profile/profile5.jpeg">
+                            <h5>priya</h5>
+                            <h4 style="margin-left: 5px; margin-top: 1px;font-size: 20px;">.</h5>
+                            <p> 10 h</p>
+                        </div>
+
+                        <div class="more">
+                            <i class="fa-solid fa-ellipsis" style="margin-left: 40px;"></i>
+                        </div>
+                    </div>
+
+                    <div class="priyaposter1">
+                    </div>
+
+                    <div class="bnav">
+                        <div class="emoji">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </div>
+
+                        <div class="saved">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="bnav2">
+                        <h5>555.4k likes</h5>
+                        <h5>priya &#128525</h5>
+                        <p>View all 102.5k comments</p>
+                    </div>
+
+                    <div class="pfooter">
+                        <div class="cmt">
+                            <input type="text" placeholder="Add a comment...">
+                        </div>
+                        <i class="fa-regular fa-face-smile"></i>
+                    </div>
+                    
+                </div>
+                <hr>
+            </div>
+
+
+            <!-- ******************************** POSTER == >> 4  ************************** -->
+            
+            <div class="harish">
+                <div class="post">
+                    <div class="pnav">
+
+                        <div class="prof">
+                            <img src="./IMAGES/Profile/profile2.jpeg">
+                            <h5>harish</h5>
+                            <h4 style="margin-left: 5px; margin-top: 1px;font-size: 20px;">.</h5>
+                            <p> 12 h</p>
+                        </div>
+
+                        <div class="more">
+                            <i class="fa-solid fa-ellipsis" style="margin-left: 30px;" ></i>
+                        </div>
+                    </div>
+
+                    <div class="harishposter">
+                    </div>
+
+                    <div class="bnav">
+                        <div class="emoji">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </div>
+
+                        <div class="saved">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="bnav2">
+                        <h5>55.4k likes</h5>
+                        <h5>harish &#128525</h5>
+                        <p>View all 10.5k comments</p>
+                    </div>
+
+                    <div class="pfooter">
+                        <div class="cmt">
+                            <input type="text" placeholder="Add a comment...">
+                        </div>
+                        <i class="fa-regular fa-face-smile"></i>
+                    </div>
+                    
+                </div>
+                <hr>
+            </div>
+
+            <!-- ******************* POSTER ==>> 5 ****************************************** -->
+
+            <div class="mega">
+                <div class="post">
+                    <div class="pnav">
+
+                        <div class="prof">
+                            <img src="./IMAGES/Profile/profile8.jpeg">
+                            <h5>mega</h5>
+                            <h4 style="margin-left: 5px; margin-top: 1px;font-size: 20px;">.</h5>
+                            <p> 15 h</p>
+                        </div>
+
+                        <div class="more">
+                            <i class="fa-solid fa-ellipsis" style="margin-left: 30px;" ></i>
+                        </div>
+                    </div>
+
+                    <div class="megaposter">
+                    </div>
+
+                    <div class="bnav">
+                        <div class="emoji">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </div>
+
+                        <div class="saved">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="bnav2">
+                        <h5>155.4k likes</h5>
+                        <h5>mega &#128525</h5>
+                        <p>View all 101.5k comments</p>
+                    </div>
+
+                    <div class="pfooter">
+                        <div class="cmt">
+                            <input type="text" placeholder="Add a comment...">
+                        </div>
+                        <i class="fa-regular fa-face-smile"></i>
+                    </div>
+                    
+                </div>
+                <hr>
+            </div>
+
+            <!--   ********************* POSTER  ==>> 6  ************************* -->
+
+            <div class="nayanthara">
+                <div class="post">
+                    <div class="pnav">
+
+                        <div class="prof">
+                            <img src="./IMAGES/Profile/profile4.jpeg">
+                            <h5>nayanthara</h5>
+                            <h4 style="margin-left: 5px; margin-top: 1px;font-size: 20px;">.</h5>
+                            <p> 10 m</p>
+                        </div>
+
+                        <div class="more">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+
+                    <div class="nayanposter">
+                    </div>
+
+                    <div class="bnav">
+                        <div class="emoji">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </div>
+
+                        <div class="saved">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="bnav2">
+                        <h5>5.4k likes</h5>
+                        <h5>nayanthara &#128525</h5>
+                        <p>View all 2.5k comments</p>
+                    </div>
+
+                    <div class="pfooter">
+                        <div class="cmt">
+                            <input type="text" placeholder="Add a comment...">
+                        </div>
+                        <i class="fa-regular fa-face-smile"></i>
+                    </div>
+                    
+                </div>
+                <hr>
+
+            </div>
+
+            <!--   ********************* POSTER  ==>> 7  ************************* -->
+
+            <div class="vijay">
+                <div class="post">
+                    <div class="pnav">
+
+                        <div class="prof">
+                            <img src="./IMAGES/Post/vijay.webp">
+                            <h5>actorvijay</h5>
+                            <h4 style="margin-left: 5px; margin-top: 1px;font-size: 20px;">.</h5>
+                            <p> 10 m</p>
+                        </div>
+
+                        <div class="more">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+
+                    <div class="vijayposter">
+                    </div>
+
+                    <div class="bnav">
+                        <div class="emoji">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </div>
+
+                        <div class="saved">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="bnav2">
+                        <h5>5.4k likes</h5>
+                        <h5>actorvijay &#128525</h5>
+                        <p>View all 2.5k comments</p>
+                    </div>
+
+                    <div class="pfooter">
+                        <div class="cmt">
+                            <input type="text" placeholder="Add a comment...">
+                        </div>
+                        <i class="fa-regular fa-face-smile"></i>
+                    </div>
+                    
+                </div>
+                <hr>
+
+            </div>
+
+            <!--   ********************* POSTER  ==>> 7  ************************* -->
+
+            <div class="deepika">
+                <div class="post">
+                    <div class="pnav">
+
+                        <div class="prof">
+                            <img src="./IMAGES/Profile/deepika profile.jpg">
+                            <h5>deepika</h5>
+                            <h4 style="margin-left: 5px; margin-top: 1px;font-size: 20px;">.</h5>
+                            <p> 1 m</p>
+                        </div>
+
+                        <div class="more">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+
+                    <div class="deepikaposter">
+                    </div>
+
+                    <div class="bnav">
+                        <div class="emoji">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </div>
+
+                        <div class="saved">
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="bnav2">
+                        <h5>10.4k likes</h5>
+                        <h5>deepika &#128525</h5>
+                        <p>View all 12.5k comments</p>
+                    </div>
+
+                    <div class="pfooter">
+                        <div class="cmt">
+                            <input type="text" placeholder="Add a comment...">
+                        </div>
+                        <i class="fa-regular fa-face-smile"></i>
+                    </div>
+                    
+                </div>
+                <hr>
+
+            </div>
+            
+
+
+        </div>  <!--MAIN  POSTER DIV CLOSED SECTION -->
+
+        
+
+
+        
+<!--        *******************************  SUGGESTIONS     ***************************       -->
+    
+
+        <div class="con3">
+            <div class="con3h">
+                <div class="profile">
+                    <img src="./IMAGES/Profile/sakthi.jpg" width="50px" height="50px">
+                    <div class="detail"> 
+                        <a href="./profile.html"><h5>__sakthi_03</h5></a>
+                        <P>SAKTHI</P>
+                    </div>
+                    
+                </div>
+                <p style="font-weight: bold;">Switch</p>
+            </div>
+
+            <div class="suggh">
+                <h5>Suggested for you</h5>
+                <p>See All</p>
+            </div>
+
+            <div class="sugg">
+                <div class="con3h">
+                    <div class="profile">
+                        <img src="./IMAGES/Sugg/download.jpeg" width="50px" height="50px">
+                        <div class="detail">
+                            <div class="blue">
+                                <h5>pradeep_kumar1123</h5><img src="./IMAGES/blue.jpeg" width="20px" height="20px" >  
+                            </div>
+                            <P>Followed by surya</P>
+                        </div>
+                        
+                    </div>
+                    <p style="font-weight: bold;">Follow</p>
+                </div>
+
+                <div class="con3h">
+                    <div class="profile">
+                        <img src="./IMAGES/Sugg/trisha.jpeg" width="50px" height="50px">
+                        <div class="detail">
+                            <div class="blue">
+                                <h5>trishnakrishnan</h5><img src="./IMAGES/blue.jpeg" width="20px" height="20px" >  
+                            </div>
+                            
+                            <P>Followed by priya</P>
+                        </div>
+                        
+                    </div>
+                    <p style="font-weight: bold;">Follow</p>
+                </div>
+
+                <div class="con3h">
+                    <div class="profile">
+                        <img src="./IMAGES/Sugg/virat.jpeg" width="50px" height="50px">
+                        <div class="detail">
+                            <div class="blue">
+                                <h5>virat.kohli</h5><img src="./IMAGES/blue.jpeg" width="20px" height="20px" >  
+                            </div>
+                            
+                            <P>Followed by harish</P>
+                        </div>
+                        
+                    </div>
+                    <p style="font-weight: bold;">Follow</p>
+                </div>
+
+                <div class="con3h">
+                    <div class="profile">
+                        <img src="./IMAGES/Sugg/pooja.jpeg" width="50px" height="50px">
+                        <div class="detail">
+                            <div class="blue">
+                                <h5>hegdepooja</h5><img src="./IMAGES/blue.jpeg" width="20px" height="20px" >  
+                            </div>
+                            
+                            <P>Followed by athulya</P>
+                        </div>
+                        
+                    </div>
+                    <p style="font-weight: bold;">Follow</p>
+                </div>
+
+                <div class="con3h">
+                    <div class="profile">
+                        <img src="./IMAGES/Sugg/village.jpeg" width="50px" height="50px">
+                        <div class="detail">
+                            <div class="blue">
+                                <h5>villagecookingchannel_</h5>
+                            </div>
+                            
+                            <P>Followed by priya</P>
+                        </div>
+                        
+                    </div>
+                    <p style="font-weight: bold;">Follow</p>
+                </div>
+
+                
+            </div>
+
+            <div class="navbar">
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Help</li></a>
+                    <a href="#"><li>Press</li></a>
+                    <a href="#"><li>API</li></a>
+                    <a href="#"><li>Jobs</li></a>
+                    <a href="#"><li>Privacy</li></a>
+                    <a href="#"><li>Terms</li></a>
+                </ul>
+
+                <ul class="ul1">
+                    <a href="#"><li>Location</li></a>
+                    <a href="#"><li>Language</li></a>
+                    <a href="#"><li>Meta Verified</li></a>
+                </ul>
+
+               
+                <div class="copy">
+                    <p>&copy; 2024 INSTAGRAM FROM META</p>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+
+</html>
